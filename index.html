@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light pt-5">
+    <!-- NavBar-->
+    <nav
+      class="navbar navbar-expand-lg bg-white small border-bottom shadow-sm fixed-top custom-nav"
+      style="--bs-bg-opacity: 0.9"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <span class="brand-style brand-gradient"> INDIAN FOOD BLOG </span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="blog-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="types.html" class="nav-link text-dark">Types</a>
+            </li>
+            <li class="nav-item">
+              <a href="Recipes.html" class="nav-link text-dark">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a href="books.html" class="nav-link text-dark">Books</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control form-control-sm"
+                placeholder="Search for..."
+                onkeyup="search()"
+              />
+              <button type="submit" class="btn btn-sm btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar-->
+
+    <!--Content 1-->
+    <header class="main-header py-5 border bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="home-header-image-holder">
+              <img
+                class="rounded img-fluid shadow-lg full-width"
+                src="img/banner.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="home-header text-holder pe-md-5">
+              <h1 class="fs-3 font-weight-normal">Indian Food</h1>
+              <p class="fs-5 fw-light text-secondary">
+                Indian food is different from rest of the world not only in
+                taste but also in cooking methods. It reflects a perfect blend
+                of various cultures and ages. Just like Indian culture, food in
+                India has also been influenced by various civilizations, which
+                have contributed their share in its overall development and the
+                present form.
+              </p>
+              <p class="fs-5 fw-light text-secondary">
+                India has a rich culinary heritage. Indian cuisine has a
+                <strong><em>5000-year-old history</em></strong
+                >. Mythological beliefs and traditions have played an important
+                role in its evolution and development. The main Indian food was
+                based on Hinduism but the Islamic influence during the Mughal
+                era, the Persian exchanges with the Middle East and the British
+                colonial system have all contributed immensely towards laying
+                the foundation of the Indian cuisine.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Content 1-->
+
+    <!--Content 2-->
+    <section class="home-page-content py-4 mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="home-content-holder py-md-3">
+              <p class="fs-5 fw-light text-secondary">
+                India is a big country with many states and regions. Each region
+                offers a unique assortment of dishes and cooking techniques.
+                Each regional cuisine uses its own locally grown herbs, spices,
+                fruits and vegetables. These regional cuisines collectively
+                combined together form the very delightful Indian Cuisine.
+              </p>
+
+              <p class="fs-5 fw-light text-secondary">
+                The staple Indian foods are Rice, Wheat and Lentils. And no
+                Indian dish is complete without spices. Indian food is a
+                combination of all six tastes like sweet, sour, salty, bitter,
+                spicy and astringent. In India different dishes are prepared for
+                different festivals. Every festival tends to be complete only
+                when special food associated with that festival is cooked on
+                that day. Like Holi can not be complete without Gujhiya and Eid
+                without Sewai. India is the only country in the world where
+                there is Unity in Diversity not only its culture & religion but
+                also its cuisine.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="home-content-image">
+              <img
+                class="img-fluid full-width rounded shadow-lg"
+                src="img/banner1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Content 2-->
+
+    <!--Content 3-->
+    <header class="main-header py-5 border bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="home-header-image-holder">
+              <img
+                class="rounded img-fluid shadow-lg full-width"
+                src="img/pic3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="home-header text-holder pe-md-5">
+              <p class="fs-5 fw-light text-secondary">
+                In western India, the desert cuisine is famous for its unique
+                taste and varieties of food. Rajasthan and Gujarat are the
+                states that represent the desseert flavor of Indian food. Here
+                an immense variety of dals and achars (pickles/preserves) is
+                used that simply substitutes the relative lack of fresh
+                vegetables in these areas. East Indian Food Sandesh In the
+                eastern India, the Bengali and Assamese styles of cooking are
+                noticeable. The staple food of Bengalis is the yummy combination
+                of rice and fish. Usually the Bengalis love eating varieties of
+                fishes. A special way of preparing the delicacy known as ‘Hilsa‘
+                is by wrapping it in the pumpkin leaf and then cooking it.
+                Another unusual ingredient that is commonly used in the Bengali
+                cooking is the ‘Bamboo Shoot’. Various sweets prepared in this
+                region, by using milk include the ‘Roshogollas‘, ‘Sandesh‘,
+                ‘Cham-cham‘ and many more.
+              </p>
+              <p class="fs-5 fw-light text-secondary">
+                In the southern India, the states make great use of spices,
+                fishes and coconuts, as most of them have coastal kitchens. In
+                the foods of Tamil Nadu use of tamarind is frequently made in
+                order to impart sourness to the dishes. It simply distinguishes
+                the Tamil Food from other cuisines. The cooking style of Andhra
+                Pradesh is supposed to make excessive use of chilies, which is
+                obviously to improve the taste of the dishes. In Kerala, some of
+                the delicious dishes are thelamb stew and appams, Malabar fried
+                prawns, Idlis, Dosas, fish molie and rice puttu. Another famous
+                item of this region is the sweetened coconut milk. Yet another
+                dish is Puttu, which is glutinous rice powder steamed like a
+                pudding in a bamboo shoot.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Content 3-->
+    <!--Content 4-->
+    <section class="home-page-content py-4 mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="home-content-holder py-md-3">
+              <p class="fs-5 fw-light text-secondary">
+                Foods of India are better known for its spiciness. Throughout
+                India, be it North India or South India, spices are used
+                generously in food. But one must not forget that every single
+                spice used in Indian dishes carries some or the other
+                nutritional as well as medicinal properties. Food in the north
+                India, to begin with, Kashmiri cuisines reflect strong Central
+                Asian influences. In Kashmir, mostly all the dishes are prepared
+                around the main course of rice found abundantly in the beautiful
+                valley. Another delicious item cooked here is the ‘Saag‘ that is
+                prepared with a green leafy vegetable known as the ‘Hak‘.
+              </p>
+
+              <p class="fs-5 fw-light text-secondary">
+                But on the other hand states like the Punjab, Haryana and Uttar
+                Pradesh show high consumption of chapatis as staple food. Again,
+                these chapatis are prepared with a variety of flours such as
+                wheat, rice, maida, besan etc. Besides chapatis other closely
+                related breads baked in these regions include Tandoori, Rumaali
+                and Naan etc. However in the northern region impact of Mughlai
+                food is quite obvious.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="home-content-image">
+              <img class="img-fluid" src="img/pic4.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Content 4-->
+
+    <!--Copyright sticky footer-->
+    <footer
+      class="footer footer-expand-lg text-bg-dark small border-bottom shadow-sm fixed-bottom custom-footer"
+      style="--bs-bg-opacity: 0.9"
+    >
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <p class="m-0 small">Copyright &copy; 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Copyright sticky footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

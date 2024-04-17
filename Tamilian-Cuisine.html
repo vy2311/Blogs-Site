@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light pt-5">
+    <!-- NavBar-->
+    <nav
+      class="navbar navbar-expand-lg bg-white small border-bottom shadow-sm fixed-top custom-nav"
+      style="--bs-bg-opacity: 0.9"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <span class="brand-style brand-gradient"> INDIAN FOOD BLOG </span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="blog-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="types.html" class="nav-link text-dark">Types</a>
+            </li>
+            <li class="nav-item">
+              <a href="Recipes.html" class="nav-link text-dark">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a href="books.html" class="nav-link text-dark">Books</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control form-control-sm"
+                placeholder="Search for..."
+                onkeyup="search()"
+              />
+              <button type="submit" class="btn btn-sm btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar-->
+    <!--Heading-->
+    <section class="banner-holder pt-4">
+      <div class="container">
+        <div class="breadcrumb-holder">
+          <nav
+            aria-label="breadcrumb"
+            style="--bs-breadcrumb-divider: '&rang;'"
+            ;
+          >
+            <ol
+              class="breadcrumb text-bg-light border d-inline-flex align-items-center px-3 py-1 rounded-pill"
+            >
+              <li class="breadcrumb-item">
+                <a href="index.html" class="small text-decoration-none">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="types.html" class="small text-decoration-none"
+                  >Types</a
+                >
+              </li>
+              <li class="breadcrumb-item active small" aria-current="page">
+                Tamil Cuisine
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="banner-content text-center">
+              <h1>Tamilian Cuisine...</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Heading-->
+
+    <!--Content 1-->
+    <section class="home-page-content py-4 mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="home-content-holder py-md-3">
+              <h3>Introduction</h3>
+              <p class="fs-5 fw-light text-secondary">
+                Tamil Nadu is famous for its deep belief that serving food to
+                others is a service to humanity, as is common in many regions of
+                India. The region has a rich cuisine involving both traditional
+                vegetarian, as well as non-vegetarian dishes. Tamil cuisine was
+                developed by Tamilians many centuries ago in Southern India. It
+                is characterized by the use of rice, legumes and lentils, its
+                distinct aroma and flavour achieved by the blending of spices
+                including curry leaves, tamarind, coriander, ginger, garlic,
+                chilli, pepper, cinnamon, cloves, cardamom, cumin, nutmeg,
+                coconut and rosewater.
+              </p>
+              <p class="fs-5 fw-light text-secondary">
+                Over a period of time, each geographical area where Tamils have
+                lived has developed its own distinct variant of the common
+                dishes in addition to dishes native to itself. The four
+                divisions of ancient Tamilakam are the primary means of dividing
+                Tamil cuisine.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="home-content-image text-center">
+              <img
+                class="img-fluid full-width rounded shadow-lg"
+                height="400px"
+                width="400px"
+                src="img/Chettinad-pepper-Chicken.jpg"
+                alt=""
+              />
+              <h5 class="fw-light small">Chettinad Chicken Curry</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Content 1-->
+
+    <!--Content 2-->
+    <section class="home-page-content py-4 mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="home-content-holder py-md-3">
+              <h3>Southern districts(Madurai, Tirunelveli etc)</h3>
+              <p class="fs-5 fw-light text-secondary">
+                These places are known for non-vegetarian food made of mutton,
+                chicken and fish. Paratha made with maida or all-purpose flour,
+                and loosely similar to the north Indian wheat flour-based
+                Paratha, is served at food outlets in Tamil Nadu, especially in
+                districts like Madurai, Virudhunagar, Tuticorin, Tirunelveli and
+                the adjoining areas.
+              </p>
+
+              <p class="fs-5 fw-light text-secondary">
+                Madurai has its own unique foods such as jigarthanda,
+                muttaiparotta (minced parotta and scrambled egg), paruthipal
+                (made of cottonseeds),Karidosai (dosai with mutton stuffing) &
+                ennaidosai (dosai with lots of oil) which are rarely found in
+                other parts of Tamil Nadu.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="home-content-image text-center">
+              <img
+                class="img-fluid full-width rounded shadow-lg"
+                height="450px"
+                width="450px"
+                src="img/Kari-Dosai.jpg"
+                alt=""
+              />
+              <h5 class="fw-light small">Kari Dosai</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Content 2-->
+
+    <!--Content 3-->
+    <section class="home-page-content py-4 mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="home-content-holder py-md-3">
+              <h3>Nanjilnadu & western Kongunadu region</h3>
+              <p class="fs-5 fw-light text-secondary">
+                Nanjilnadu region is famous for its fish curry since the region
+                is surrounded by the three great water bodies of Asia: (Indian
+                ocean, Arabian Seaand Bay of Bengal). Fish forms an integral
+                part of life. Owing to its unique cultural affinity and the
+                availability of coconut, coconut oil forms a base for almost all
+                the preparations of the region.
+              </p>
+
+              <p class="fs-5 fw-light text-secondary">
+                Kongundu region has specialities like Santhakai/Sandhavai (a
+                noodle like item of rice), Oputtu (a sweet tasting pizza-like
+                dish that is dry outside with a sweet stuffing), and kola
+                urundai (meatballs), Thengai Paal (sweet hot milk made of
+                jaggery, coconut and cotton seeds), Ulundu Kali(Sweet made out
+                of Jaggery, Gingely Oil and Black Gram), Ragi puttumavu, Kadalai
+                Urundai, Ellu Urundai, Pori Urundai. The natural crops of this
+                region forms the main ingredients in this Kongunadu cuisine
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="home-content-image text-center">
+              <img
+                class="img-fluid full-width rounded shadow-lg"
+                height="300px"
+                width="400px"
+                src="img/Opputtu.jpg"
+                alt=""
+              />
+              <h5 class="fw-light small">Opputtu</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Content 3-->
+
+    <!--Copyright sticky footer-->
+    <footer
+      class="footer footer-expand-lg text-bg-dark small border-bottom shadow-sm fixed-bottom custom-footer"
+      style="--bs-bg-opacity: 0.9"
+    >
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <p class="m-0 small">Copyright &copy; 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!--Copyright sticky footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light pt-5">
+    <!-- NavBar-->
+    <nav
+      class="navbar navbar-expand-lg bg-white small border-bottom shadow-sm fixed-top custom-nav"
+      style="--bs-bg-opacity: 0.9"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <span class="brand-style brand-gradient"> INDIAN FOOD BLOG </span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="blog-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="types.html" class="nav-link text-dark">Types</a>
+            </li>
+            <li class="nav-item">
+              <a href="Recipes.html" class="nav-link text-dark">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a href="books.html" class="nav-link text-dark">Books</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control form-control-sm"
+                placeholder="Search for..."
+                onkeyup="search()"
+              />
+              <button type="submit" class="btn btn-sm btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar-->
+    <!--Heading-->
+    <section class="banner-holder pt-4">
+      <div class="container">
+        <div class="breadcrumb-holder">
+          <nav
+            aria-label="breadcrumb"
+            style="--bs-breadcrumb-divider: '&rang;'"
+            ;
+          >
+            <ol
+              class="breadcrumb text-bg-light border d-inline-flex align-items-center px-3 py-1 rounded-pill"
+            >
+              <li class="breadcrumb-item">
+                <a href="index.html" class="small text-decoration-none">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="types.html" class="small text-decoration-none"
+                  >Types</a
+                >
+              </li>
+              <li class="breadcrumb-item active small" aria-current="page">
+                Andhra Cuisine
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="banner-content text-center">
+              <h1>Andhra Pradesh Cuisine...</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Heading-->
+
+    <!--Content 1-->
+    <section class="home-page-content py-4 mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="home-content-holder py-md-3">
+              <h3>Coastal Andhra</h3>
+              <p class="fs-5 fw-light text-secondary">
+                Coastal Andhra is dominated by the Krishna and Godavari river
+                delta regions and is adjacent to the Bay of Bengal. This
+                proximity to water has led to rice, lentils, and seafood
+                becoming dietary staples in the region. Andhra cuisine has its
+                own variations, but dishes are predominantly rice-based. The
+                Nellore region in the south has its own unique recipes, markedly
+                different from those in Uttarandhra. Andhra cuisine is prevalent
+                in restaurants all over Andhra Pradesh, as well as in cities
+                like Bangalore, Chennai, and New Delhi.
+              </p>
+              <p class="fs-5 fw-light text-secondary">
+                The Uttarandhra region is composed of the northeastern districts
+                of Srikakulam, Vizianagaram, and Visakhapatnam in Coastal
+                Andhra. While Visakhapatnam district has a cuisine closer in
+                character to the rest of Andhra's districts, Vizianagaram and
+                Srikakulam cuisine shares less in common with other Andhra
+                regional cuisines. The food of the Uttarandhra region is often
+                sweeter than in other regions of Andhra Pradesh. Lentils are
+                often cooked in jaggery, a dish referred to as bellam pappu
+                (బెల్లం పప్పు) and are usually served with butter and steamed
+                rice.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="home-content-image text-center">
+              <img
+                class="img-fluid full-width rounded shadow-lg"
+                height="600px"
+                width="500px"
+                src="img/ugadi-pachadi.jpg"
+                alt=""
+              />
+              <h5 class="fw-light small">Ugadi Pachadi</h5>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="home-content-holder">
+              <p class="fs-5 fw-light text-secondary">
+                Vegetables are often cooked in a gravy of menthi kura (fenugreek
+                seed paste), avapettina kura (mustard seed paste), or nuvvugunda
+                kura (sesame paste). Ullikaram is another popular dish in which
+                vegetables or corn seeds are flavored with shallots or onion
+                paste. Poori and patoli are popular breakfast or festival
+                dishes. Patoli is composed of soaked split black chickpeas
+                (senagapappu or chana dal) ground to a coarse paste and seasoned
+                with coriander seeds, onions, and sometimes cluster beans
+                (goruchikkudukaya) . Upma or uppindi coarsely broken rice
+                steamed with vegetables and seeds.
+              </p>
+              <p class="fs-5 fw-light text-secondary">
+                Idli is also very common. Karam podi is a popular curry powder
+                that is served with idli, dosa and upma. Inguva charu is a
+                sweet-and-sour stew made with tamarind and hing. It can be eaten
+                with rice or uppupindi. Bellam pulusu is another flavorful,
+                thick, sweet stew made out of rice flour, jaggery, corn cobs,
+                and whole shallots. The pickles used in Uttarandhra differ from
+                those of other regions of Andhra Pradesh. Avakaya is a mango
+                pickle which is part of a standard Andhra meal.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="home-content-image text-center">
+              <img
+                class="img-fluid full-width rounded shadow-lg"
+                height="600px"
+                width="600px"
+                src="img/Baghara Baigan.jpg"
+                alt=""
+              />
+              <h5 class="fw-light small">Baghara Baigan</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Content 1-->
+
+    <!--Content 2-->
+    <section class="home-page-content py-4 mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="home-content-holder py-md-3">
+              <h3>Rayalaseema</h3>
+              <p class="fs-5 fw-light text-secondary">
+                Rayalaseema, in the south of Andhra Pradesh, is well-known for
+                the spiciness of its cuisine due to the liberal use of chili
+                powder in almost every dish. Seema karam is a dish unique to
+                this region. Some of the main courses include rice, jonna
+                (jowar), ragi roti with neyyi , and raagi sangati , usually
+                served with spinach or pulusu. Uggani is a dish unique to
+                Rayalaseema, especially Ananthapur, Kurnool, and Kadapa
+                districts, as well as in Karnataka, where it is called oggane.
+              </p>
+
+              <p class="fs-5 fw-light text-secondary">
+                Uggani bajji served primarily as a breakfast dish, but can be
+                eaten as a snack too. It is spicy and a signature dish of
+                Rayalaseema and Eastern Karnataka. Sweeter dishes of Rayalaseema
+                include ariselu (rice-based vada with jaggery), pakam undalu (a
+                mixture of steamed rice flour, ground nuts, and jaggery), borugu
+                undalu (a sweet made of jowar and jaggery), and rava laddoo .
+                Masala borugulu , nargis mandakki, and ponganaalu (wet rice
+                flour fried in oil, with carrot, onion, and chilis) are other
+                savory specialties from the region.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="home-content-image text-center">
+              <img
+                class="img-fluid full-width rounded shadow-lg"
+                height="400px"
+                width="400px"
+                src="img/Uggani.jpg"
+                alt=""
+              />
+              <h5 class="fw-light small">Uggani</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Content 2-->
+
+    <!--Copyright sticky footer-->
+    <footer
+      class="footer footer-expand-lg text-bg-dark small border-bottom shadow-sm fixed-bottom custom-footer"
+      style="--bs-bg-opacity: 0.9"
+    >
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <p class="m-0 small">Copyright &copy; 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Copyright sticky footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
